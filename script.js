@@ -11,14 +11,9 @@ function quizSelection(Selection) {
     rightQuestions = 0
     let x = window.matchMedia("(max-width: 420px");
     if (x.matches) {
-        document.getElementById('left').style.display = 'none';
-        document.getElementById('startscreen').style.display = 'flex';
-        document.getElementById('start_button').style.display = 'block';
+        quizResponsive();
     } else {
-        document.getElementById('startscreen').style.display = 'flex';
-        document.getElementById('start_button').style.display = 'block';
-        document.getElementById('questionBody').style.display = 'none';
-        document.getElementById('endScreen').style.display = 'none';
+        quizNormalScreen();
     }
     resetAnswerButtons();
 }

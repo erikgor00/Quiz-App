@@ -48,11 +48,24 @@ function selectRightAnswer(selection) {
 
 function selectWrongAnswer(selection, idOfRightAnswer) {
     document.getElementById(selection).parentNode.classList.add('bg-danger');
-        document.getElementById(idOfRightAnswer).parentNode.classList.add('bg-success');
-        audioWrong.volume = 0.2;
-        audioWrong.play();
+    document.getElementById(idOfRightAnswer).parentNode.classList.add('bg-success');
+    audioWrong.volume = 0.2;
+    audioWrong.play();
 }
 
 function gameIsOver() {
     return currentQuestion >= questions.length;
+}
+
+function quizResponsive() {
+    document.getElementById('left').style.display = 'none';
+    document.getElementById('startscreen').style.display = 'flex';
+    document.getElementById('start_button').style.display = 'block';
+}
+
+function quizNormalScreen() {
+    document.getElementById('startscreen').style.display = 'flex';
+    document.getElementById('start_button').style.display = 'block';
+    document.getElementById('questionBody').style.display = 'none';
+    document.getElementById('endScreen').style.display = 'none';
 }
