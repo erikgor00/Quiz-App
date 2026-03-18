@@ -36,6 +36,11 @@ Run the app:
 
 ng serve
 
+Open:
+
+http://localhost:4200
+
+
 ## Live Demo
 
 Coming soon
