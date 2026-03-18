@@ -32,7 +32,7 @@ Open the project folder and start index.html in your browser.
 
 ## Live Demo
 
-Coming soon
+https://erik-quiz-app.netlify.app
 
 ## Author
 
