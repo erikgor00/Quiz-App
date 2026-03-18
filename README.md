@@ -28,18 +28,7 @@ Clone the repository:
 
 git clone https://github.com/erikgor00/Quiz-App.git
 
-Install dependencies:
-
-npm install
-
-Run the app:
-
-ng serve
-
-Open:
-
-http://localhost:4200
-
+Open the project folder and start index.html in your browser.
 
 ## Live Demo
 
